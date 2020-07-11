@@ -1,0 +1,72 @@
+.button-4{
+    border: none;
+    font-size: 1.5625em;
+    padding: 0.5em 2.2em;
+    background-color: rgb(239, 239, 239);
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+    place-items: center;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transform: perspective(1px) translateZ(0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.button-4:visited{
+    color: black;
+}
+
+.button-4:hover, .button-4:focus, .button-4:active{
+    animation-name: pulse;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+  }
+@keyframes pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+  }
+
+/* @keyframes pulse {
+    25% {
+      transform: scale(1.1);
+    }
+    75% {
+      transform: scale(0.9);
+    }
+  } */
+/* 
+@keyframes pulse{
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+}
+ */
+
