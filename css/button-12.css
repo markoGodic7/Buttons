@@ -1,27 +1,27 @@
-.button-3{
+.button-12{
     background-color: rgb(239, 239, 239);
-    border: none;
+    text-decoration: none;
     font-size: 1.5625em;
     padding: 0.5em 2.2em;
-    text-decoration: none;
+    border: none;
     vertical-align: middle;
     display: inline-block;
     place-items: center;
-    transition-duration: 0.3s;
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-         -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
     -webkit-transform: perspective(1px) translateZ(0);
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s; 
 }
 
-.button-3:hover, .button-3:focus, .button-3:active {
-    transform: scale(0.9);   
-    -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-}
-
-.button-3:visited{
+.button-12:visited{
     color: black;
+}
+
+.button-12:hover, .button-12:focus, .button-12:active{
+    transform: scale(1.1) rotate(4deg);
+    -webkit-transform: scale(1.1) rotate(4deg);
+        -ms-transform: scale(1.1) rotate(4deg);
 }

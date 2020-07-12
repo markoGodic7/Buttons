@@ -1,0 +1,28 @@
+.button-9{
+    background-color: rgb(239, 239, 239);
+    text-decoration: none;
+    font-size: 1.5625em;
+    padding: 0.5em 2.2em;
+    border: none;
+    vertical-align: middle;
+    display: inline-block;
+    place-items: center;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.5s;
+    -webkit-transform: perspective(1px) translateZ(0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.button-9:visited{
+    color: black;
+}
+
+.button-9:hover, .button-9:focus, .button-9:active{
+    transform: scale(1.2);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        -o-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}

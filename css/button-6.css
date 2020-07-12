@@ -1,9 +1,9 @@
-.button-4{
-    border: none;
-    font-size: 1.5625em;
-    padding: 0.5em 2.2em;
+.button-6{
     background-color: rgb(239, 239, 239);
     text-decoration: none;
+    font-size: 1.5625em;
+    padding: 0.5em 2.2em;
+    border: none;
     vertical-align: middle;
     display: inline-block;
     place-items: center;
@@ -13,39 +13,32 @@
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-.button-4:visited{
+.button-6:visited{
     color: black;
 }
 
-.button-4:hover, .button-4:focus, .button-4:active{
-    animation-name: pulse;
+.button-6:hover, .button-6:focus, .button-6:active{
+    animation-name: pulseShrink;
     animation-duration: 0.3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite; 
-    -webkit-animation-name: pulse;
+    animation-direction: alternate;
+    -webkit-animation-name: pulseShrink;
     -webkit-animation-duration: 0.3s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate; 
 }
 
-@-webkit-keyframes pulse {
-    25% {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
+@-webkit-keyframes pulseShrink{
+    to{
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
     }
-    75% {
-      -webkit-transform: scale(0.9);
-              transform: scale(0.9);
+}
+@keyframes pulseShrink{
+    to{
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
     }
-  }
-@keyframes pulse {
-    25% {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
-    }
-    75% {
-      -webkit-transform: scale(0.9);
-              transform: scale(0.9);
-    }
-  }
-
+}
